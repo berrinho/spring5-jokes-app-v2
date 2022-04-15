@@ -12,7 +12,7 @@ public class JokeController {
     public String getJoke(Model model, JokeGenerator jokeGenerator) {
 
         model.addAttribute("joke", jokeGenerator.getJoke());
-
+        //pass model to thymeleaf template
         return("index");
     }
 }
